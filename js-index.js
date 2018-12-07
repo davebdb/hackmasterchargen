@@ -1,23 +1,35 @@
 //STRENGTH object
-var strength = new Object();
+//var strength = new Object();
+//strength.value="";
+function StrengthObject() {
+	this.value="";
+}
+var strength = new StrengthObject;
+
 
 //INTELLIGENCE object
 var intelligence = new Object();
+intelligence.value="";
 
 //WISDOM object
 var wisdom = new Object();
+wisdom.value="";
 
 //DEXTERITY object
 var dexterity = new Object();
+dexterity.value="";
 
 //CONSTITUTION object
 var constitution = new Object();
+constitution.value="";
 
 //LOOKS object
 var looks = new Object();
+looks.value="";
 
 //CHARISMA object
 var charisma = new Object();
+charisma.value="";
 
 function rollAbilityScore() {
 	var rollNumber;
@@ -48,6 +60,8 @@ document.getElementById("dexterity").textContent=dexterity.value;
 document.getElementById("constitution").textContent=constitution.value;
 document.getElementById("looks").textContent=looks.value;
 document.getElementById("charisma").textContent=charisma.value;
+
+
 
 //document.getElementById(attributesArray[counter]).textContent=attributesArray[counter] + ":" + attribValue.toFixed(2);
 //document.write("<br>"+attributesArray[counter]+":"+totalRoll+"."+d100+"<br><br><br>");
