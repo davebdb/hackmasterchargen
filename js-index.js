@@ -1,7 +1,3 @@
-var attributesArray = ["str","int","wis","dex","con","lks","cha"];
-var attributesArrayLength = attributesArray.length;	
-var attributesValues = [];
-
 //STRENGTH object
 var strength = new Object();
 
