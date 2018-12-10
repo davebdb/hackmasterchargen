@@ -2,34 +2,62 @@
 //var strength = new Object();
 //strength.value="";
 function StrengthObject() {
-	this.value="";
+	this.abilityScore="";
+	this.damageModifier="";
+	this.featOfStrength="";
+	this.lift="";
+	this.carryNo="";
+	this.carryLight="";
+	this.carryMedium="";
+	this.carryHeavy="";
+	this.drag="";
 }
-var strength = new StrengthObject;
-
-
 //INTELLIGENCE object
-var intelligence = new Object();
-intelligence.value="";
-
+function IntelligenceObject() {
+	this.abilityScore="";
+	this.attackModifier="";
+	this.bpBonus="";
+}
 //WISDOM object
-var wisdom = new Object();
-wisdom.value="";
-
+function WisdomObject() {
+	this.abilityScore="";
+	this.initiativeModifier="";
+	this.bpBonus="";
+	this.defenseModifier="";
+	this.mentalSavingThrowModifier="";
+}
 //DEXTERITY object
-var dexterity = new Object();
-dexterity.value="";
-
+function DexterityObject() {
+	this.abilityScore="";
+	this.initiativeModifier="";
+	this.attackModifier="";
+	this.defenseModifier="";
+	this.dodgeSavingThrowModifier="";
+	this.featOfAgility="";
+}
 //CONSTITUTION object
-var constitution = new Object();
-constitution.value="";
-
+function ConstitutionObject() {
+	this.abilityScore="";
+	this.physicalSavingThrowModifier="";
+}
 //LOOKS object
-var looks = new Object();
-looks.value="";
-
+function LooksObject() {
+	this.abilityScore="";
+	this.charismaModifier="";
+	this.startingHonorModifier="";
+	this.startingFameModifier="";
+}
 //CHARISMA object
-var charisma = new Object();
-charisma.value="";
+function CharismaObject() {
+	this.abilityScore="";
+	this.bpBonus="";
+	this.startingHonorModifier="";
+	this.turningModifier="";
+	this.moraleModifier="";
+	this.maximumProteges="";
+}
+
+
 
 function rollAbilityScore() {
 	var rollNumber;
@@ -45,23 +73,35 @@ totalRoll +=d100;
 return totalRoll;
 }
 
-strength.value=rollAbilityScore();
-intelligence.value=rollAbilityScore();
-wisdom.value=rollAbilityScore();
-dexterity.value=rollAbilityScore();
-constitution.value=rollAbilityScore();
-looks.value=rollAbilityScore();
-charisma.value=rollAbilityScore();
+var strength = new StrengthObject;
+var intelligence = new IntelligenceObject;
+var wisdom = new WisdomObject;
+var dexterity = new DexterityObject;
+var constitution = new ConstitutionObject;
+var looks = new LooksObject;
+var charisma = new CharismaObject;
 
-document.getElementById("strength").textContent=strength.value;
-document.getElementById("intelligence").textContent=intelligence.value;
-document.getElementById("wisdom").textContent=wisdom.value;
-document.getElementById("dexterity").textContent=dexterity.value;
-document.getElementById("constitution").textContent=constitution.value;
-document.getElementById("looks").textContent=looks.value;
-document.getElementById("charisma").textContent=charisma.value;
+function updateScores() {
+strength.abilityScore=rollAbilityScore().toFixed(2);
+intelligence.abilityScore=rollAbilityScore().toFixed(2);
+wisdom.abilityScore=rollAbilityScore().toFixed(2);
+dexterity.abilityScore=rollAbilityScore().toFixed(2);
+constitution.abilityScore=rollAbilityScore().toFixed(2);
+looks.abilityScore=rollAbilityScore().toFixed(2);
+charisma.abilityScore=rollAbilityScore().toFixed(2);
 
+document.getElementById("strength").textContent=strength.abilityScore;
+document.getElementById("intelligence").textContent=intelligence.abilityScore;
+document.getElementById("wisdom").textContent=wisdom.abilityScore;
+document.getElementById("dexterity").textContent=dexterity.abilityScore;
+document.getElementById("constitution").textContent=constitution.abilityScore;
+document.getElementById("looks").textContent=looks.abilityScore;
+document.getElementById("charisma").textContent=charisma.abilityScore;
+}
 
+updateScores();
+
+document.getElementById("rollButton").addEventListener("click", updateScores)
 
 //document.getElementById(attributesArray[counter]).textContent=attributesArray[counter] + ":" + attribValue.toFixed(2);
 //document.write("<br>"+attributesArray[counter]+":"+totalRoll+"."+d100+"<br><br><br>");
