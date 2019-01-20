@@ -1,3 +1,26 @@
 .attributes {
 	font-size: 40px;
+	float: right;
 	}
+
+.attributeGrid {
+	display: grid;
+	border: 5px solid black;
+	grid-auto-rows: minmax (400px,auto);
+	grid-template-columns: 2fr 18fr;
+}
+
+/*
+.attributeGrid > div{
+	border: 1px solid black;
+	}
+*/
+
+.attributeGridBox {
+	border: 5px solid black;
+	}
+
+.attributeGridBox2 {
+	border: 1px solid black;
+	}
+
