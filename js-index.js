@@ -81,6 +81,23 @@ var constitution = new ConstitutionObject;
 var looks = new LooksObject;
 var charisma = new CharismaObject;
 
+function darkMode() {
+	document.body.style.backgroundColor = "black";
+	document.body.style.color = "white";
+}
+
+function lightMode() {
+	document.body.style.backgroundColor = "white";
+	document.body.style.color = "black";
+}
+
+function greenMode() {
+	document.body.style.backgroundColor = "black";
+	document.body.style.color = "#4cbb17";
+}
+
+
+
 function updateScores() {
 strength.abilityScore=rollAbilityScore().toFixed(2);
 intelligence.abilityScore=rollAbilityScore().toFixed(2);
@@ -102,6 +119,9 @@ document.getElementById("charisma").textContent=charisma.abilityScore;
 updateScores();
 
 document.getElementById("rollButton").addEventListener("click", updateScores)
+document.getElementById("darkMode").addEventListener("click", darkMode)
+document.getElementById("lightMode").addEventListener("click", lightMode)
+document.getElementById("greenMode").addEventListener("click", greenMode)
 
 //document.getElementById(attributesArray[counter]).textContent=attributesArray[counter] + ":" + attribValue.toFixed(2);
 //document.write("<br>"+attributesArray[counter]+":"+totalRoll+"."+d100+"<br><br><br>");

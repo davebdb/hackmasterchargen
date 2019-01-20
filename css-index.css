@@ -5,7 +5,7 @@
 
 .attributeGrid {
 	display: grid;
-	border: 5px solid black;
+	border: 5px solid #333333;
 	grid-auto-rows: minmax (400px,auto);
 	grid-template-columns: 2fr 18fr;
 }
@@ -17,10 +17,10 @@
 */
 
 .attributeGridBox {
-	border: 5px solid black;
+	border: 5px solid #333333;
 	}
 
 .attributeGridBox2 {
-	border: 1px solid black;
+	border: 1px solid #333333;
 	}
 
