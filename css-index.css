@@ -5,9 +5,51 @@
 
 .attributeGrid {
 	display: grid;
-	border: 5px solid #333333;
+	border: 1px solid #333333;
 	grid-auto-rows: minmax (400px,auto);
-	grid-template-columns: 2fr 18fr;
+//	grid-template-columns: 2fr 18fr;
+}
+.attributeGridStr {
+	display: grid;
+	border: 3px solid #333333;
+	grid-auto-rows: minmax (400px,auto);
+	grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+}
+.attributeGridInt {
+	display: grid;
+	border: 3px solid #333333;
+	grid-auto-rows: minmax (400px,auto);
+	grid-template-columns: 2fr 2fr 2fr 14fr;
+}
+.attributeGridWis {
+	display: grid;
+	border: 3px solid #333333;
+	grid-auto-rows: minmax (400px,auto);
+	grid-template-columns: 2fr 2fr 2fr 2fr 2fr 10fr;
+}
+.attributeGridDex {
+	display: grid;
+	border: 3px solid #333333;
+	grid-auto-rows: minmax (400px,auto);
+	grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 8fr;
+}
+.attributeGridCon {
+	display: grid;
+	border: 3px solid #333333;
+	grid-auto-rows: minmax (400px,auto);
+	grid-template-columns: 2fr 2fr 16fr;
+}
+.attributeGridLks {
+	display: grid;
+	border: 3px solid #333333;
+	grid-auto-rows: minmax (400px,auto);
+	grid-template-columns: 2fr 2fr 2fr 2fr 12fr;
+}
+.attributeGridCha {
+	display: grid;
+	border: 3px solid #333333;
+	grid-auto-rows: minmax (400px,auto);
+	grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 8fr;
 }
 
 /*
@@ -17,7 +59,7 @@
 */
 
 .attributeGridBox {
-	border: 5px solid #333333;
+	border: 2px solid #333333;
 	}
 
 .attributeGridBox2 {
