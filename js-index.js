@@ -555,6 +555,135 @@ function updateIntelligenceModifiers() {
 	document.getElementById("intelligenceBPBonus").textContent=intelligence.bpBonus;
 }
 function updateWisdomModifiers() {
+	if (wisdom.abilityScore >= 1 && wisdom.abilityScore < 2) {
+		wisdom.initiativeModifier = "+7";
+		wisdom.bpBonus = "0";
+		wisdom.defenseModifier = "-4";
+		wisdom.mentalSavingThrowModifier = "-4";
+	} else if (wisdom.abilityScore >= 2 && wisdom.abilityScore < 3) {
+		wisdom.initiativeModifier = "+6";
+		wisdom.bpBonus = "0";		
+		wisdom.defenseModifier = "-3";
+		wisdom.mentalSavingThrowModifier = "-4";
+
+	} else if (wisdom.abilityScore >= 3 && wisdom.abilityScore < 4) {
+		wisdom.initiativeModifier = "+5";
+		wisdom.bpBonus = "0";		
+		wisdom.defenseModifier = "-3";
+		wisdom.mentalSavingThrowModifier = "-3";
+
+	} else if (wisdom.abilityScore >= 4 && wisdom.abilityScore < 5) {
+		wisdom.initiativeModifier = "+4";
+		wisdom.bpBonus = "0";		
+		wisdom.defenseModifier = "-2";
+		wisdom.mentalSavingThrowModifier = "-3";
+
+	} else if (wisdom.abilityScore >= 5 && wisdom.abilityScore < 6) {
+		wisdom.initiativeModifier = "+4";
+		wisdom.bpBonus = "0";		
+		wisdom.defenseModifier = "-2";
+		wisdom.mentalSavingThrowModifier = "-2";
+
+	} else if (wisdom.abilityScore >= 6 && wisdom.abilityScore < 7) {
+		wisdom.initiativeModifier = "+4";
+		wisdom.bpBonus = "0";		
+		wisdom.defenseModifier = "-2";
+		wisdom.mentalSavingThrowModifier = "-2";
+
+	} else if (wisdom.abilityScore >= 7 && wisdom.abilityScore < 8) {
+		wisdom.initiativeModifier = "+3";
+		wisdom.bpBonus = "0";		
+		wisdom.defenseModifier = "-1";
+		wisdom.mentalSavingThrowModifier = "-1";
+
+	} else if (wisdom.abilityScore >= 8 && wisdom.abilityScore < 9) {
+		wisdom.initiativeModifier = "+3";
+		wisdom.bpBonus = "0";		
+		wisdom.defenseModifier = "-1";
+		wisdom.mentalSavingThrowModifier = "-1";
+
+	} else if (wisdom.abilityScore >= 9 && wisdom.abilityScore < 10) {
+		wisdom.initiativeModifier = "+3";
+		wisdom.bpBonus = "0";		
+		wisdom.defenseModifier = "-1";
+		wisdom.mentalSavingThrowModifier = "0";
+
+	} else if (wisdom.abilityScore >= 10 && wisdom.abilityScore < 11) {
+		wisdom.initiativeModifier = "+2";
+		wisdom.bpBonus = "0";		
+		wisdom.defenseModifier = "0";
+		wisdom.mentalSavingThrowModifier = "0";
+
+	} else if (wisdom.abilityScore >= 11 && wisdom.abilityScore < 12) {
+		wisdom.initiativeModifier = "+2";
+		wisdom.bpBonus = "1";		
+		wisdom.defenseModifier = "0";
+		wisdom.mentalSavingThrowModifier = "0";
+
+	} else if (wisdom.abilityScore >= 12 && wisdom.abilityScore < 13) {
+		wisdom.initiativeModifier = "+1";
+		wisdom.bpBonus = "2";		
+		wisdom.defenseModifier = "+1";
+		wisdom.mentalSavingThrowModifier = "0";
+
+	} else if (wisdom.abilityScore >= 13 && wisdom.abilityScore < 14) {
+		wisdom.initiativeModifier = "+1";
+		wisdom.bpBonus = "3";		
+		wisdom.defenseModifier = "+1";
+		wisdom.mentalSavingThrowModifier = "+1";
+
+	} else if (wisdom.abilityScore >= 14 && wisdom.abilityScore < 15) {
+		wisdom.initiativeModifier = "+1";
+		wisdom.bpBonus = "6";		
+		wisdom.defenseModifier = "+1";
+		wisdom.mentalSavingThrowModifier = "+1";
+
+	} else if (wisdom.abilityScore >= 15 && wisdom.abilityScore < 16) {
+		wisdom.initiativeModifier = "0";
+		wisdom.bpBonus = "10";		
+		wisdom.defenseModifier = "+2";
+		wisdom.mentalSavingThrowModifier = "+2";
+
+	} else if (wisdom.abilityScore >= 16 && wisdom.abilityScore < 17) {
+		wisdom.initiativeModifier = "0";
+		wisdom.bpBonus = "15";		
+		wisdom.defenseModifier = "+2";
+		wisdom.mentalSavingThrowModifier = "+2";
+
+	} else if (wisdom.abilityScore >= 17 && wisdom.abilityScore < 18) {
+		wisdom.initiativeModifier = "0";
+		wisdom.bpBonus = "21";		
+		wisdom.defenseModifier = "+2";
+		wisdom.mentalSavingThrowModifier = "+2";
+
+	} else if (wisdom.abilityScore >= 18 && wisdom.abilityScore < 19) {
+		wisdom.initiativeModifier = "-1";
+		wisdom.bpBonus = "28";		
+		wisdom.defenseModifier = "+3";
+		wisdom.mentalSavingThrowModifier = "+3";
+
+	} else if (wisdom.abilityScore >= 19 && wisdom.abilityScore < 20) {
+		wisdom.initiativeModifier = "-1";
+		wisdom.bpBonus = "36";		
+		wisdom.defenseModifier = "+3";
+		wisdom.mentalSavingThrowModifier = "+3";
+
+	} else if (wisdom.abilityScore >= 20 && wisdom.abilityScore < 21) {
+		wisdom.initiativeModifier = "-1";
+		wisdom.bpBonus = "45";		
+		wisdom.defenseModifier = "+3";
+		wisdom.mentalSavingThrowModifier = "+3";
+
+	} else {
+		wisdom.initiativeModifier = "NA";
+		wisdom.bpBonus = "NA";
+		wisdom.defenseModifier = "NA";
+		wisdom.mentalSavingThrowModifier = "NA";
+	}
+	document.getElementById("wisdomInitiativeModifier").textContent=wisdom.initiativeModifier;
+	document.getElementById("wisdomBPBonus").textContent=wisdom.bpBonus;
+	document.getElementById("wisdomDefenseModifier").textContent=wisdom.defenseModifier;
+	document.getElementById("wisdomMentalSavingThrowModifier").textContent=wisdom.mentalSavingThrowModifier;
 }
 function updateConstitutionModifiers() {
 }
@@ -609,6 +738,7 @@ function updateScores() {
 
 	updateStrengthModifiers();
 	updateIntelligenceModifiers();
+	updateWisdomModifiers();
 
 }
 
