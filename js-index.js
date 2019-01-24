@@ -487,6 +487,72 @@ function updateStrengthModifiers() {
 function updateDexterityModifiers() {
 }
 function updateIntelligenceModifiers() {
+	if (intelligence.abilityScore >= 1 && intelligence.abilityScore < 2) {
+		intelligence.attackModifier = "-5";
+		intelligence.bpBonus = "0";
+	} else if (intelligence.abilityScore >= 2 && intelligence.abilityScore < 3) {
+		intelligence.attackModifier = "-4";
+		intelligence.bpBonus = "0";		
+	} else if (intelligence.abilityScore >= 3 && intelligence.abilityScore < 4) {
+		intelligence.attackModifier = "-3";
+		intelligence.bpBonus = "0";		
+	} else if (intelligence.abilityScore >= 4 && intelligence.abilityScore < 5) {
+		intelligence.attackModifier = "-2";
+		intelligence.bpBonus = "0";		
+	} else if (intelligence.abilityScore >= 5 && intelligence.abilityScore < 6) {
+		intelligence.attackModifier = "-2";
+		intelligence.bpBonus = "0";		
+	} else if (intelligence.abilityScore >= 6 && intelligence.abilityScore < 7) {
+		intelligence.attackModifier = "-2";
+		intelligence.bpBonus = "0";		
+	} else if (intelligence.abilityScore >= 7 && intelligence.abilityScore < 8) {
+		intelligence.attackModifier = "-1";
+		intelligence.bpBonus = "0";		
+	} else if (intelligence.abilityScore >= 8 && intelligence.abilityScore < 9) {
+		intelligence.attackModifier = "-1";
+		intelligence.bpBonus = "0";		
+	} else if (intelligence.abilityScore >= 9 && intelligence.abilityScore < 10) {
+		intelligence.attackModifier = "-1";
+		intelligence.bpBonus = "0";		
+	} else if (intelligence.abilityScore >= 10 && intelligence.abilityScore < 11) {
+		intelligence.attackModifier = "0";
+		intelligence.bpBonus = "0";		
+	} else if (intelligence.abilityScore >= 11 && intelligence.abilityScore < 12) {
+		intelligence.attackModifier = "0";
+		intelligence.bpBonus = "1";		
+	} else if (intelligence.abilityScore >= 12 && intelligence.abilityScore < 13) {
+		intelligence.attackModifier = "+1";
+		intelligence.bpBonus = "2";		
+	} else if (intelligence.abilityScore >= 13 && intelligence.abilityScore < 14) {
+		intelligence.attackModifier = "+1";
+		intelligence.bpBonus = "3";		
+	} else if (intelligence.abilityScore >= 14 && intelligence.abilityScore < 15) {
+		intelligence.attackModifier = "+1";
+		intelligence.bpBonus = "6";		
+	} else if (intelligence.abilityScore >= 15 && intelligence.abilityScore < 16) {
+		intelligence.attackModifier = "+2";
+		intelligence.bpBonus = "10";		
+	} else if (intelligence.abilityScore >= 16 && intelligence.abilityScore < 17) {
+		intelligence.attackModifier = "+2";
+		intelligence.bpBonus = "15";		
+	} else if (intelligence.abilityScore >= 17 && intelligence.abilityScore < 18) {
+		intelligence.attackModifier = "+2";
+		intelligence.bpBonus = "21";		
+	} else if (intelligence.abilityScore >= 18 && intelligence.abilityScore < 19) {
+		intelligence.attackModifier = "+3";
+		intelligence.bpBonus = "28";		
+	} else if (intelligence.abilityScore >= 19 && intelligence.abilityScore < 20) {
+		intelligence.attackModifier = "+3";
+		intelligence.bpBonus = "36";		
+	} else if (intelligence.abilityScore >= 20 && intelligence.abilityScore < 21) {
+		intelligence.attackModifier = "+3";
+		intelligence.bpBonus = "45";		
+	} else {
+		intelligence.attackModifier = "NA";
+		intelligence.bpBonus = "NA";
+	}
+	document.getElementById("intelligenceAttackModifier").textContent=intelligence.attackModifier;
+	document.getElementById("intelligenceBPBonus").textContent=intelligence.bpBonus;
 }
 function updateWisdomModifiers() {
 }
@@ -542,6 +608,7 @@ function updateScores() {
 	document.getElementById("charisma").textContent=charisma.abilityScore;
 
 	updateStrengthModifiers();
+	updateIntelligenceModifiers();
 
 }
 
