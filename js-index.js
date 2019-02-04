@@ -485,6 +485,236 @@ function updateStrengthModifiers() {
 	
 }
 function updateDexterityModifiers() {
+	if (dexterity.abilityScore >= 3.01 && dexterity.abilityScore < 3.51) {
+		dexterity.initiativeModifier = "+7";
+		dexterity.attackModifier = "-4";
+		dexterity.defenseModifier = "-5";
+		dexterity.dodgeSavingThrowModifier = "-3";
+		dexterity.featOfAgility = "-10";
+	} else if (dexterity.abilityScore >= 3.51 && dexterity.abilityScore < 4.01) {
+		dexterity.initiativeModifier = "+7";
+		dexterity.attackModifier = "-3";
+		dexterity.defenseModifier = "-5";
+		dexterity.dodgeSavingThrowModifier = "-3";
+		dexterity.featOfAgility = "-9";
+	} else if (dexterity.abilityScore >= 4.01 && dexterity.abilityScore < 4.51) {
+		dexterity.initiativeModifier = "+6";
+		dexterity.attackModifier = "-3";
+		dexterity.defenseModifier = "-4";
+		dexterity.dodgeSavingThrowModifier = "-3";
+		dexterity.featOfAgility = "-9";
+	} else if (dexterity.abilityScore >= 4.51 && dexterity.abilityScore < 5.01) {
+		dexterity.initiativeModifier = "+6";
+		dexterity.attackModifier = "-3";
+		dexterity.defenseModifier = "-4";
+		dexterity.dodgeSavingThrowModifier = "-3";
+		dexterity.featOfAgility = "-8";
+	} else if (dexterity.abilityScore >= 5.01 && dexterity.abilityScore < 5.51) {
+		dexterity.initiativeModifier = "+6";
+		dexterity.attackModifier = "-3";
+		dexterity.defenseModifier = "-4";
+		dexterity.dodgeSavingThrowModifier = "-2";
+		dexterity.featOfAgility = "-7";
+	} else if (dexterity.abilityScore >= 5.51 && dexterity.abilityScore < 6.01) {
+		dexterity.initiativeModifier = "+5";
+		dexterity.attackModifier = "-2";
+		dexterity.defenseModifier = "-3";
+		dexterity.dodgeSavingThrowModifier = "-2";
+		dexterity.featOfAgility = "-7";
+	} else if (dexterity.abilityScore >= 6.01 && dexterity.abilityScore < 6.51) {
+		dexterity.initiativeModifier = "+5";
+		dexterity.attackModifier = "-2";
+		dexterity.defenseModifier = "-3";
+		dexterity.dodgeSavingThrowModifier = "-2";
+		dexterity.featOfAgility = "-6";
+	} else if (dexterity.abilityScore >= 6.51 && dexterity.abilityScore < 7.01) {
+		dexterity.initiativeModifier = "+5";
+		dexterity.attackModifier = "-2";
+		dexterity.defenseModifier = "-2";
+		dexterity.dodgeSavingThrowModifier = "-2";
+		dexterity.featOfAgility = "-5";
+	} else if (dexterity.abilityScore >= 7.01 && dexterity.abilityScore < 7.51) {
+		dexterity.initiativeModifier = "+4";
+		dexterity.attackModifier = "-2";
+		dexterity.defenseModifier = "-2";
+		dexterity.dodgeSavingThrowModifier = "-1";
+		dexterity.featOfAgility = "-5";
+	} else if (dexterity.abilityScore >= 7.51 && dexterity.abilityScore < 8.01) {
+		dexterity.initiativeModifier = "+4";
+		dexterity.attackModifier = "-1";
+		dexterity.defenseModifier = "-2";
+		dexterity.dodgeSavingThrowModifier = "-1";
+		dexterity.featOfAgility = "-4";
+	} else if (dexterity.abilityScore >= 8.01 && dexterity.abilityScore < 8.51) {
+		dexterity.initiativeModifier = "+4";
+		dexterity.attackModifier = "-1";
+		dexterity.defenseModifier = "-2";
+		dexterity.dodgeSavingThrowModifier = "-1";
+		dexterity.featOfAgility = "-3";
+	} else if (dexterity.abilityScore >= 8.51 && dexterity.abilityScore < 9.01) {
+		dexterity.initiativeModifier = "+3";
+		dexterity.attackModifier = "-1";
+		dexterity.defenseModifier = "-1";
+		dexterity.dodgeSavingThrowModifier = "-1";
+		dexterity.featOfAgility = "-3";
+	} else if (dexterity.abilityScore >= 9.01 && dexterity.abilityScore < 9.51) {
+		dexterity.initiativeModifier = "+3";
+		dexterity.attackModifier = "-1";
+		dexterity.defenseModifier = "-1";
+		dexterity.dodgeSavingThrowModifier = "0";
+		dexterity.featOfAgility = "-2";
+	} else if (dexterity.abilityScore >= 9.51 && dexterity.abilityScore < 10.01) {
+		dexterity.initiativeModifier = "+3";
+		dexterity.attackModifier = "-0";
+		dexterity.defenseModifier = "-1";
+		dexterity.dodgeSavingThrowModifier = "0";
+		dexterity.featOfAgility = "-1";
+	} else if (dexterity.abilityScore >= 10.01 && dexterity.abilityScore < 10.51) {
+		dexterity.initiativeModifier = "+2";
+		dexterity.attackModifier = "0";
+		dexterity.defenseModifier = "0";
+		dexterity.dodgeSavingThrowModifier = "0";
+		dexterity.featOfAgility = "0";
+	} else if (dexterity.abilityScore >= 10.51 && dexterity.abilityScore < 11.01) {
+		dexterity.initiativeModifier = "+2";
+		dexterity.attackModifier = "0";
+		dexterity.defenseModifier = "0";
+		dexterity.dodgeSavingThrowModifier = "0";
+		dexterity.featOfAgility = "0";
+	} else if (dexterity.abilityScore >= 11.01 && dexterity.abilityScore < 11.51) {
+		dexterity.initiativeModifier = "+2";
+		dexterity.attackModifier = "0";
+		dexterity.defenseModifier = "0";
+		dexterity.dodgeSavingThrowModifier = "0";
+		dexterity.featOfAgility = "0";
+	} else if (dexterity.abilityScore >= 11.51 && dexterity.abilityScore < 12.01) {
+		dexterity.initiativeModifier = "+1";
+		dexterity.attackModifier = "0";
+		dexterity.defenseModifier = "+1";
+		dexterity.dodgeSavingThrowModifier = "0";
+		dexterity.featOfAgility = "0";
+	} else if (dexterity.abilityScore >= 12.01 && dexterity.abilityScore < 12.51) {
+		dexterity.initiativeModifier = "+1";
+		dexterity.attackModifier = "+1";
+		dexterity.defenseModifier = "+1";
+		dexterity.dodgeSavingThrowModifier = "0";
+		dexterity.featOfAgility = "+1";
+	} else if (dexterity.abilityScore >= 12.51 && dexterity.abilityScore < 13.01) {
+		dexterity.initiativeModifier = "+1";
+		dexterity.attackModifier = "+1";
+		dexterity.defenseModifier = "+1";
+		dexterity.dodgeSavingThrowModifier = "0";
+		dexterity.featOfAgility = "+2";
+	} else if (dexterity.abilityScore >= 13.01 && dexterity.abilityScore < 13.51) {
+		dexterity.initiativeModifier = "0";
+		dexterity.attackModifier = "+1";
+		dexterity.defenseModifier = "+2";
+		dexterity.dodgeSavingThrowModifier = "+1";
+		dexterity.featOfAgility = "+3";
+	} else if (dexterity.abilityScore >= 13.51 && dexterity.abilityScore < 14.01) {
+		dexterity.initiativeModifier = "0";
+		dexterity.attackModifier = "+1";
+		dexterity.defenseModifier = "+2";
+		dexterity.dodgeSavingThrowModifier = "+1";
+		dexterity.featOfAgility = "+4";
+	} else if (dexterity.abilityScore >= 14.01 && dexterity.abilityScore < 14.51) {
+		dexterity.initiativeModifier = "0";
+		dexterity.attackModifier = "+2";
+		dexterity.defenseModifier = "+2";
+		dexterity.dodgeSavingThrowModifier = "+1";
+		dexterity.featOfAgility = "+5";
+	} else if (dexterity.abilityScore >= 14.51 && dexterity.abilityScore < 15.01) {
+		dexterity.initiativeModifier = "-1";
+		dexterity.attackModifier = "+2";
+		dexterity.defenseModifier = "+3";
+		dexterity.dodgeSavingThrowModifier = "+1";
+		dexterity.featOfAgility = "+6";
+	} else if (dexterity.abilityScore >= 15.01 && dexterity.abilityScore < 15.51) {
+		dexterity.initiativeModifier = "-1";
+		dexterity.attackModifier = "+2";
+		dexterity.defenseModifier = "+3";
+		dexterity.dodgeSavingThrowModifier = "+2";
+		dexterity.featOfAgility = "+7";
+	} else if (dexterity.abilityScore >= 15.51 && dexterity.abilityScore < 16.01) {
+		dexterity.initiativeModifier = "-1";
+		dexterity.attackModifier = "+2";
+		dexterity.defenseModifier = "+3";
+		dexterity.dodgeSavingThrowModifier = "+2";
+		dexterity.featOfAgility = "+8";
+	} else if (dexterity.abilityScore >= 16.01 && dexterity.abilityScore < 16.51) {
+		dexterity.initiativeModifier = "-2";
+		dexterity.attackModifier = "+3";
+		dexterity.defenseModifier = "+4";
+		dexterity.dodgeSavingThrowModifier = "+2";
+		dexterity.featOfAgility = "+9";
+	} else if (dexterity.abilityScore >= 16.51 && dexterity.abilityScore < 17.01) {
+		dexterity.initiativeModifier = "-2";
+		dexterity.attackModifier = "+3";
+		dexterity.defenseModifier = "+4";
+		dexterity.dodgeSavingThrowModifier = "+2";
+		dexterity.featOfAgility = "+10";
+	} else if (dexterity.abilityScore >= 17.01 && dexterity.abilityScore < 17.51) {
+		dexterity.initiativeModifier = "-2";
+		dexterity.attackModifier = "+3";
+		dexterity.defenseModifier = "+4";
+		dexterity.dodgeSavingThrowModifier = "+2";
+		dexterity.featOfAgility = "+11";
+	} else if (dexterity.abilityScore >= 17.51 && dexterity.abilityScore < 18.01) {
+		dexterity.initiativeModifier = "-3";
+		dexterity.attackModifier = "+3";
+		dexterity.defenseModifier = "+5";
+		dexterity.dodgeSavingThrowModifier = "+2";
+		dexterity.featOfAgility = "+12";
+	} else if (dexterity.abilityScore >= 18.01 && dexterity.abilityScore < 18.51) {
+		dexterity.initiativeModifier = "-3";
+		dexterity.attackModifier = "+4";
+		dexterity.defenseModifier = "+5";
+		dexterity.dodgeSavingThrowModifier = "+3";
+		dexterity.featOfAgility = "+13";
+	} else if (dexterity.abilityScore >= 18.51 && dexterity.abilityScore < 19.01) {
+		dexterity.initiativeModifier = "-3";
+		dexterity.attackModifier = "+4";
+		dexterity.defenseModifier = "+5";
+		dexterity.dodgeSavingThrowModifier = "+3";
+		dexterity.featOfAgility = "+14";
+	} else if (dexterity.abilityScore >= 19.01 && dexterity.abilityScore < 19.51) {
+		dexterity.initiativeModifier = "-4";
+		dexterity.attackModifier = "+4";
+		dexterity.defenseModifier = "+6";
+		dexterity.dodgeSavingThrowModifier = "+3";
+		dexterity.featOfAgility = "+15";
+	} else if (dexterity.abilityScore >= 19.51 && dexterity.abilityScore < 20.01) {
+		dexterity.initiativeModifier = "-4";
+		dexterity.attackModifier = "+4";
+		dexterity.defenseModifier = "+6";
+		dexterity.dodgeSavingThrowModifier = "+3";
+		dexterity.featOfAgility = "+16";
+	} else if (dexterity.abilityScore >= 20.01 && dexterity.abilityScore < 20.51) {
+		dexterity.initiativeModifier = "-4";
+		dexterity.attackModifier = "+5";
+		dexterity.defenseModifier = "+6";
+		dexterity.dodgeSavingThrowModifier = "+3";
+		dexterity.featOfAgility = "+17";
+	} else if (dexterity.abilityScore >= 20.51 && dexterity.abilityScore < 21.01) {
+		dexterity.initiativeModifier = "-5";
+		dexterity.attackModifier = "+5";
+		dexterity.defenseModifier = "+7";
+		dexterity.dodgeSavingThrowModifier = "+3";
+		dexterity.featOfAgility = "+18";
+	} else {
+		dexterity.initiativeModifier = "NA";
+		dexterity.attackModifier = "NA";
+		dexterity.defenseModifier = "NA";
+		dexterity.dodgeSavingThrowModifier = "NA";
+		dexterity.featOfAgility = "NA";
+	}
+	
+	document.getElementById("dexterityInitiativeModifier").textContent=dexterity.initiativeModifier;
+	document.getElementById("dexterityAttackModifier").textContent=dexterity.attackModifier;
+	document.getElementById("dexterityDefenseModifier").textContent=dexterity.defenseModifier;
+	document.getElementById("dexterityDodgeSavingThrowModifier").textContent=dexterity.dodgeSavingThrowModifier;
+	document.getElementById("dexterityFeatOfAgility").textContent=dexterity.featOfAgility;
+
 }
 function updateIntelligenceModifiers() {
 	if (intelligence.abilityScore >= 1 && intelligence.abilityScore < 2) {
@@ -686,6 +916,54 @@ function updateWisdomModifiers() {
 	document.getElementById("wisdomMentalSavingThrowModifier").textContent=wisdom.mentalSavingThrowModifier;
 }
 function updateConstitutionModifiers() {
+	if (constitution.abilityScore >= 1 && constitution.abilityScore < 2) {
+		constitution.physicalSavingThrowModifier = "-5";
+	} else if (constitution.abilityScore >= 2 && constitution.abilityScore < 3) {
+		constitution.physicalSavingThrowModifier = "-4";
+	} else if (constitution.abilityScore >= 3 && constitution.abilityScore < 4) {
+		constitution.physicalSavingThrowModifier = "-3";
+	} else if (constitution.abilityScore >= 4 && constitution.abilityScore < 5) {
+		constitution.physicalSavingThrowModifier = "-3";
+	} else if (constitution.abilityScore >= 5 && constitution.abilityScore < 6) {
+		constitution.physicalSavingThrowModifier = "-2";
+	} else if (constitution.abilityScore >= 6 && constitution.abilityScore < 7) {
+		constitution.physicalSavingThrowModifier = "-2";
+	} else if (constitution.abilityScore >= 7 && constitution.abilityScore < 8) {
+		constitution.physicalSavingThrowModifier = "-1";
+	} else if (constitution.abilityScore >= 8 && constitution.abilityScore < 9) {
+		constitution.physicalSavingThrowModifier = "-1";
+	} else if (constitution.abilityScore >= 9 && constitution.abilityScore < 10) {
+		constitution.physicalSavingThrowModifier = "0";
+	} else if (constitution.abilityScore >= 10 && constitution.abilityScore < 11) {
+		constitution.physicalSavingThrowModifier = "0";
+	} else if (constitution.abilityScore >= 11 && constitution.abilityScore < 12) {
+		constitution.physicalSavingThrowModifier = "0";
+	} else if (constitution.abilityScore >= 12 && constitution.abilityScore < 13) {
+		constitution.physicalSavingThrowModifier = "0";
+	} else if (constitution.abilityScore >= 13 && constitution.abilityScore < 14) {
+		constitution.physicalSavingThrowModifier = "+1";
+	} else if (constitution.abilityScore >= 14 && constitution.abilityScore < 15) {
+		constitution.physicalSavingThrowModifier = "+1";
+	} else if (constitution.abilityScore >= 15 && constitution.abilityScore < 16) {
+		constitution.physicalSavingThrowModifier = "+2";
+	} else if (constitution.abilityScore >= 16 && constitution.abilityScore < 17) {
+		constitution.physicalSavingThrowModifier = "+2";
+	} else if (constitution.abilityScore >= 17 && constitution.abilityScore < 18) {
+		constitution.physicalSavingThrowModifier = "+2";
+	} else if (constitution.abilityScore >= 18 && constitution.abilityScore < 19) {
+		constitution.physicalSavingThrowModifier = "+3";
+	} else if (constitution.abilityScore >= 19 && constitution.abilityScore < 20) {
+		constitution.physicalSavingThrowModifier = "+3";
+	} else if (constitution.abilityScore >= 20 && constitution.abilityScore < 21) {
+		constitution.physicalSavingThrowModifier = "+3";
+	} else if (constitution.abilityScore >= 21 && constitution.abilityScore < 22) {
+		constitution.physicalSavingThrowModifier = "+4";
+	} else if (constitution.abilityScore >= 22 && constitution.abilityScore < 23) {
+		constitution.physicalSavingThrowModifier = "+4";
+	} else {
+		constitution.physicalSavingThrowModifier = "NA";
+	}
+	document.getElementById("constitutionPhysicalSavingThrowModifier").textContent=constitution.physicalSavingThrowModifier;
 }
 function updateLooksModifiers() {
 }
@@ -739,7 +1017,11 @@ function updateScores() {
 	updateStrengthModifiers();
 	updateIntelligenceModifiers();
 	updateWisdomModifiers();
-
+	updateDexterityModifiers();
+	updateConstitutionModifiers();
+	updateLooksModifiers();
+	updateCharismaModifiers();
+	
 }
 
 updateScores();
