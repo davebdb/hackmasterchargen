@@ -67,11 +67,14 @@ function rollAbilityScore() {
 		for (rollNumber=0;rollNumber<3;rollNumber++) {
 		diceRoll = Math.floor(Math.random()*6)+1;
 		totalRoll +=diceRoll;
+		console.log("d6=",diceRoll);		
 	}
-d100=Math.floor((Math.random()*100)+1)*0.01;
+	d100=Math.floor((Math.random()*100)+1)*0.01;
+	console.log("d100=",d100);
 
-totalRoll +=d100;
-return totalRoll;
+	totalRoll +=d100;
+	console.log("totalRoll=",totalRoll);
+	return totalRoll;
 }
 
 function updateStrengthModifiers() {
